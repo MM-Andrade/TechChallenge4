@@ -15,26 +15,21 @@ namespace PetHealthMonitor.Application.Triages
             _petRepository = petRepository;
         }
 
-        public async void RecordTriage(Guid petId, double temperature, string? observations = null)
+        public async void RecordTriage(TemperatureTriage triage)
         {
-            _logger.LogInformation($"Getting pet by id {petId}");
-            var pet = _petRepository.GetById(petId);
+            _logger.LogInformation($"Getting pet by id {triage.PetId}");
+            var pet = _petRepository.GetById(triage.PetId);
 
             if (pet == null)
             {
-                _logger.LogError($"Pet by id {petId} not found.");
+                _logger.LogError($"Pet by id {triage.PetId} not found.");
                 throw new Exception("Pet not found.");
             }
 
             //TODO: Implementar bus para publicar o evento de triagem
-            //await _bus.Publish<ITriageReading>(new
-            //{
-            //    PetId = petId,
-            //    Temperature = temperature,
-            //    Observations = observations
-            //});
+            //await _bus.Publish<ITemperatureTriage>(triage);
 
-            _logger.LogInformation($"Recording triage for Pet {petId}: Temperature {temperature}°C");
+            _logger.LogInformation($"Recording triage for Pet {triage.PetId}: Temperature {triage.Temperature}°C");
         }
     }
 }

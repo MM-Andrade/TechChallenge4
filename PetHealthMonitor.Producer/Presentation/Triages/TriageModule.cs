@@ -9,7 +9,7 @@ namespace PetHealthMonitor.Producer.Presentation.Triages
         {
             app.MapPost("/triages/record", (ITriageService triageService, TemperatureTriage triage) =>
             {
-                triageService.RecordTriage(triage.PetId, triage.Temperature, triage.Observations);
+                triageService.RecordTriage(triage);
 
                 return Results.Ok();
             }).AllowAnonymous();

@@ -1,7 +1,9 @@
-﻿namespace PetHealthMonitor.Application.Triages
+﻿using PetHealthMonitor.Domain.Triages;
+
+namespace PetHealthMonitor.Application.Triages
 {
     public interface ITriageService
     {
-        void RecordTriage(Guid petId, double temperature, string? observations);
+        void RecordTriage(TemperatureTriage triage);
     }
 }
