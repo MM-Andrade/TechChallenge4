@@ -1,4 +1,4 @@
-using Consumer;
+using PetHealthMonitor.Consumer;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

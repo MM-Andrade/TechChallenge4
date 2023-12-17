@@ -1,4 +1,4 @@
-namespace Consumer
+namespace PetHealthMonitor.Consumer
 {
     public class Worker : BackgroundService
     {

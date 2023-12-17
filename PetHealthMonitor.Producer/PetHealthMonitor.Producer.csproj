@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>67c09d5d-80b2-4b2d-a99e-ba3f4a102227</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PetHealthMonitor.Application\PetHealthMonitor.Application.csproj" />
+    <ProjectReference Include="..\PetHealthMonitor.Domain\PetHealthMonitor.Domain.csproj" />
+    <ProjectReference Include="..\PetHealthMonitor.Infrastructure\PetHealthMonitor.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

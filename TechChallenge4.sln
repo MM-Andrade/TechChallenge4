@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "Producer\Producer.csproj", "{3DDC569A-EB72-4031-9A72-E07A1FC41174}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthMonitor.Domain", "PetHealthMonitor.Domain\PetHealthMonitor.Domain.csproj", "{D2D4868A-7DA3-4ED9-89EB-A5A061F6CD47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{5C5136A6-AF60-41DA-AB33-75D81B27F8E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthMonitor.Application", "PetHealthMonitor.Application\PetHealthMonitor.Application.csproj", "{DDDEE91D-ECC0-40E0-9A10-461EE8CADF8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthMonitor.Infrastructure", "PetHealthMonitor.Infrastructure\PetHealthMonitor.Infrastructure.csproj", "{9A33EBCF-CD08-418E-90C0-BF7ABDE1149B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthMonitor.Consumer", "PetHealthMonitor.Consumer\PetHealthMonitor.Consumer.csproj", "{895BB321-0C8B-4F1F-A251-7F94570AA0A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthMonitor.Producer", "PetHealthMonitor.Producer\PetHealthMonitor.Producer.csproj", "{932ED32C-164A-4716-A4FA-5D300D08BC55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3DDC569A-EB72-4031-9A72-E07A1FC41174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DDC569A-EB72-4031-9A72-E07A1FC41174}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DDC569A-EB72-4031-9A72-E07A1FC41174}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DDC569A-EB72-4031-9A72-E07A1FC41174}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C5136A6-AF60-41DA-AB33-75D81B27F8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C5136A6-AF60-41DA-AB33-75D81B27F8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C5136A6-AF60-41DA-AB33-75D81B27F8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C5136A6-AF60-41DA-AB33-75D81B27F8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D4868A-7DA3-4ED9-89EB-A5A061F6CD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D4868A-7DA3-4ED9-89EB-A5A061F6CD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D4868A-7DA3-4ED9-89EB-A5A061F6CD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D4868A-7DA3-4ED9-89EB-A5A061F6CD47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDDEE91D-ECC0-40E0-9A10-461EE8CADF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDDEE91D-ECC0-40E0-9A10-461EE8CADF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDDEE91D-ECC0-40E0-9A10-461EE8CADF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDDEE91D-ECC0-40E0-9A10-461EE8CADF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A33EBCF-CD08-418E-90C0-BF7ABDE1149B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A33EBCF-CD08-418E-90C0-BF7ABDE1149B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A33EBCF-CD08-418E-90C0-BF7ABDE1149B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A33EBCF-CD08-418E-90C0-BF7ABDE1149B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895BB321-0C8B-4F1F-A251-7F94570AA0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895BB321-0C8B-4F1F-A251-7F94570AA0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895BB321-0C8B-4F1F-A251-7F94570AA0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895BB321-0C8B-4F1F-A251-7F94570AA0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{932ED32C-164A-4716-A4FA-5D300D08BC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932ED32C-164A-4716-A4FA-5D300D08BC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932ED32C-164A-4716-A4FA-5D300D08BC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932ED32C-164A-4716-A4FA-5D300D08BC55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
