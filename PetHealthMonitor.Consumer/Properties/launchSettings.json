@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Consumer": {
+    "PetHealthMonitor.Consumer": {
       "commandName": "Project",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
