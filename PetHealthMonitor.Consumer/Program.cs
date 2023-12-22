@@ -1,9 +1,11 @@
 using PetHealthMonitor.Consumer;
+using PetHealthMonitor.Consumer.Extensions;
 
 IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
+    .ConfigureServices((hostContext, services) =>
     {
         services.AddHostedService<Worker>();
+        services.AddMassTransit(hostContext.Configuration);
     })
     .Build();
 

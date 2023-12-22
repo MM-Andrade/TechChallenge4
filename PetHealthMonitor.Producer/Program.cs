@@ -1,17 +1,21 @@
+using MassTransit;
 using PetHealthMonitor.Application.Pets;
 using PetHealthMonitor.Application.Triages;
 using PetHealthMonitor.Domain.Pets;
 using PetHealthMonitor.Infrastructure.Pets;
+using PetHealthMonitor.Producer.Extensions;
 using PetHealthMonitor.Producer.Presentation.Pets;
 using PetHealthMonitor.Producer.Presentation.Triages;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddMassTransit(configuration);
 // TODO: Adicionar em um método de extensão
 builder.Services.AddSingleton<IPetRepository, PetInMemoryRepository>();
 builder.Services.AddScoped<IPetService, PetService>();
@@ -30,6 +34,6 @@ app.UseHttpsRedirection();
 
 // Endpoints
 app.AddPetEndpoints();
-app.AddTriageEndpoints();
+app.AddTriageEndpoints(configuration);
 
 app.Run();
