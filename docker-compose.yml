@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  pethealthmonitor.producer:
+    image: ${DOCKER_REGISTRY-}pethealthmonitorproducer
+    build:
+      context: .
+      dockerfile: PetHealthMonitor.Producer/Dockerfile
+  pethealthmonitor.consumer:
+    image: ${DOCKER_REGISTRY-}pethealthmonitorconsumer
+    build:
+      context: .
+      dockerfile: PetHealthMonitor.Consumer/Dockerfile
+   
+  pethealthmonitor-mq:
+    image: rabbitmq:management
+    container_name: PetHealthMonitor.RabbitMq
+    hostname: pethealth-mq
+    environment:
+      RABBITMQ_DEFAULT_USER: "guest"
+      RABBITMQ_DEFAULT_PASS: "guest"
