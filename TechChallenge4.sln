@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthMonitor.Consumer",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthMonitor.Producer", "PetHealthMonitor.Producer\PetHealthMonitor.Producer.csproj", "{932ED32C-164A-4716-A4FA-5D300D08BC55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthMonitor.IntegrationEvents", "PetHealthMonitor.IntegrationEvents\PetHealthMonitor.IntegrationEvents.csproj", "{310DBA15-A4F8-45A9-9B6C-0E142B379967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthMonitor.IntegrationEvents", "PetHealthMonitor.IntegrationEvents\PetHealthMonitor.IntegrationEvents.csproj", "{310DBA15-A4F8-45A9-9B6C-0E142B379967}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B3242890-169C-4B4B-BB32-CF80E4DC4ABC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{310DBA15-A4F8-45A9-9B6C-0E142B379967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{310DBA15-A4F8-45A9-9B6C-0E142B379967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{310DBA15-A4F8-45A9-9B6C-0E142B379967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3242890-169C-4B4B-BB32-CF80E4DC4ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3242890-169C-4B4B-BB32-CF80E4DC4ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3242890-169C-4B4B-BB32-CF80E4DC4ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3242890-169C-4B4B-BB32-CF80E4DC4ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
