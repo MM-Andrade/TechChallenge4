@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-PetHealthMonitor.Consumer-5bd88f1b-a3c6-432d-acda-4048a8195799</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>

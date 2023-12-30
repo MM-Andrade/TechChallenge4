@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "PetHealthMonitor.Function.Consumer": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7095"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 32233,
+      "useSSL": false
+    }
+  }
+}
