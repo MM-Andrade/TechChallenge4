@@ -15,7 +15,8 @@ namespace PetHealthMonitor.Infrastructure.Pets
 
         public Pet GetById(Guid id)
         {
-            return _pets.FirstOrDefault(pet => pet.Id == id);
+            var pet = _pets.FirstOrDefault(pet => pet.Id == id);
+            return pet ?? new Pet();
         }
     }
 }

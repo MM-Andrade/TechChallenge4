@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>67c09d5d-80b2-4b2d-a99e-ba3f4a102227</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,7 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PetHealthMonitor.Application\PetHealthMonitor.Application.csproj" />
-    <ProjectReference Include="..\PetHealthMonitor.Domain\PetHealthMonitor.Domain.csproj" />
     <ProjectReference Include="..\PetHealthMonitor.Infrastructure\PetHealthMonitor.Infrastructure.csproj" />
 	<ProjectReference Include="..\PetHealthMonitor.IntegrationEvents\PetHealthMonitor.IntegrationEvents.csproj" />
   </ItemGroup>

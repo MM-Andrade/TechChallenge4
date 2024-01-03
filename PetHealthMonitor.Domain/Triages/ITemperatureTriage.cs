@@ -4,6 +4,6 @@
     {
         Guid PetId { get; }
         double Temperature { get; }
-        string? Observations { get; }
+        string Observations { get; }
     }
 }
