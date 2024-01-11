@@ -8,11 +8,17 @@
 
         public string? Observations { get; set; }
 
+        public TemperatureTriage()
+        {
+        }
+
         public TemperatureTriage(Guid petId, double temperature, string? observations)
         {
             PetId = petId;
             Temperature = temperature;
             Observations = observations;
         }
+
+    
     }
 }

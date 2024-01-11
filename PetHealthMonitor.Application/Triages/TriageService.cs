@@ -15,7 +15,7 @@ namespace PetHealthMonitor.Application.Triages
             _petRepository = petRepository;
         }
 
-        public async void RecordTriage(TemperatureTriage triage)
+        public async Task RecordTriage(TemperatureTriage triage)
         {
             _logger.LogInformation($"Getting pet by id {triage.PetId}");
             var pet = _petRepository.GetById(triage.PetId);
@@ -30,6 +30,7 @@ namespace PetHealthMonitor.Application.Triages
             //await _bus.Publish<ITemperatureTriage>(triage);
 
             _logger.LogInformation($"Recording triage for Pet {triage.PetId}: Temperature {triage.Temperature}°C");
+
         }
     }
 }
