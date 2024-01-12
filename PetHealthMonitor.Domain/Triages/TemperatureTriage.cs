@@ -14,5 +14,9 @@
             Temperature = temperature;
             Observations = observations;
         }
+
+        public TemperatureTriage()
+        {
+        }
     }
 }

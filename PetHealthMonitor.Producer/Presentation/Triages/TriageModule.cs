@@ -12,7 +12,7 @@ namespace PetHealthMonitor.Producer.Presentation.Triages
         {
             app.MapPost("/triages/record", async (ITriageService triageService, IBus bus, TemperatureTriage triage) =>
             {
-                triageService.RecordTriage(triage);
+                await triageService.RecordTriage(triage);
 
                 var massTransitSettings = configuration.GetSection("MassTransitSettings").Get<MassTransitSettings>();
                 var endpoint = await bus.GetSendEndpoint(new Uri($"queue:{massTransitSettings?.EndpointName}"));

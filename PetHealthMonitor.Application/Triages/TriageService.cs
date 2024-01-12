@@ -18,7 +18,7 @@ namespace PetHealthMonitor.Application.Triages
             _bus = bus;
         }
 
-        public async void RecordTriage(TemperatureTriage triage)
+        public async Task RecordTriage(TemperatureTriage triage)
         {
             _logger.LogInformation($"Getting pet by id {triage.PetId}");
             var pet = _petRepository.GetById(triage.PetId);
