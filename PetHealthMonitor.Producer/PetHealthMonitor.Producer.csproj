@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PetHealthMonitor.Application\PetHealthMonitor.Application.csproj" />
-    <ProjectReference Include="..\PetHealthMonitor.Domain\PetHealthMonitor.Domain.csproj" />
     <ProjectReference Include="..\PetHealthMonitor.Infrastructure\PetHealthMonitor.Infrastructure.csproj" />
 	<ProjectReference Include="..\PetHealthMonitor.IntegrationEvents\PetHealthMonitor.IntegrationEvents.csproj" />
   </ItemGroup>

@@ -16,7 +16,7 @@ namespace PetHealthMonitor.Producer.Presentation.Triages
 
                 var massTransitSettings = configuration.GetSection("MassTransitSettings").Get<MassTransitSettings>();
                 var endpoint = await bus.GetSendEndpoint(new Uri($"queue:{massTransitSettings?.EndpointName}"));
-                await endpoint.Send(new PetTriageIntegrationEvent(triage.PetId, triage.Temperature));
+                await endpoint.Send(new PetTriageIntegrationEvent(triage.PetId, triage.Temperature, triage.Observations??""));
 
                 return Results.Ok();
             }).AllowAnonymous();

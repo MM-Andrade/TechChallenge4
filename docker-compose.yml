@@ -6,12 +6,12 @@ services:
     build:
       context: .
       dockerfile: PetHealthMonitor.Producer/Dockerfile
+
   pethealthmonitor.consumer:
     image: ${DOCKER_REGISTRY-}pethealthmonitorconsumer
     build:
       context: .
       dockerfile: PetHealthMonitor.Consumer/Dockerfile
-   
   pethealthmonitor-mq:
     image: rabbitmq:management
     container_name: PetHealthMonitor.RabbitMq
@@ -19,3 +19,10 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: "guest"
       RABBITMQ_DEFAULT_PASS: "guest"
+
+  pethealthmonitor.function.consumer:
+    image: ${DOCKER_REGISTRY-}pethealthmonitorfunctionconsumer
+    build:
+      context: .
+      dockerfile: PetHealthMonitor.Function.Consumer/Dockerfile
+
