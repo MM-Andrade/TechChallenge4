@@ -13,7 +13,7 @@ public static class MassTransitExtensions
         {
             x.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(settings?.Host, "/", host =>
+                cfg.Host(new Uri(settings?.Host), host =>
                 {
                     host.Username(settings?.Username);
                     host.Password(settings?.Password);
