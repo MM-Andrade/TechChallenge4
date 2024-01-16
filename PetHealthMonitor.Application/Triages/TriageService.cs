@@ -33,6 +33,7 @@ namespace PetHealthMonitor.Application.Triages
             await _bus.Publish<ITemperatureTriage>(triage);
 
             _logger.LogInformation($"Recording triage for Pet {triage.PetId}: Temperature {triage.Temperature}°C");
+
         }
     }
 }
