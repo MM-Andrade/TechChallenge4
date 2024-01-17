@@ -6,6 +6,9 @@ services:
     build:
       context: .
       dockerfile: PetHealthMonitor.Producer/Dockerfile
+    ports:
+      - "63549:443"
+      - "63550:80"
 
   pethealthmonitor.consumer:
     image: ${DOCKER_REGISTRY-}pethealthmonitorconsumer
