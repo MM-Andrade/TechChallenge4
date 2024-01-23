@@ -8,7 +8,7 @@
 ## Visão Geral
 
   
-O projeto PetHealtMonitor é um conjunto de aplicações desenvolvidas utilizando a tecnologia de mensageria com o RabbitMQ como broker e os conceitos de clean architecture.
+O projeto PetHealthMonitor é um conjunto de aplicações desenvolvidas utilizando a tecnologia de mensageria com o RabbitMQ como broker e os conceitos de clean architecture.
 
 A aplicação permite o cadastro de um pet, tutor e a temperatura para realizar uma verificação se o mesmo está febril.
 ![Fluxo Aplicação](.github/fluxo_aplicacao.png?style=flat)
@@ -65,7 +65,7 @@ Os projetos **PetHealthMonitor.Consumer** e **PetHealthMonitor.Functions.Consume
 
 ![PetHealthMonitor.Consumer](.github/consumer.png?style=flat)
 
-> O projeto **PetHealthMonitor.Functions.Consumer** é uma aplicação Serveless para execução no Azure Functions e adicinada a solution como referência para estudos
+> O projeto **PetHealthMonitor.Functions.Consumer** é uma aplicação Serverless para execução no Azure Functions e adicionada a solution como referência para estudos
 
 ## Conclusão
 
