@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pethealthmonitor-consumer
+  name: pethealthmonitor-consumer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pethealthmonitor-consumer
+  template:
+    metadata:
+      labels:
+        app: pethealthmonitor-consumer
+    spec:
+      containers:
+        - name: pethealthmonitor-consumer
+          image: andrademm/pethealthmonitorconsumer:latest
+          resources:
+             limits:
+                cpu: "1"
+                memory: "512Mi"
+             requests:
+                cpu: "0.5"
+                memory: "256Mi"
