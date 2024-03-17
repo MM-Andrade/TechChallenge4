@@ -7,11 +7,11 @@
 
 O tech challenge da fase 5 consiste em criar um cluster Kubernetes utilizando uma das aplicações desenvolvidas em fases anteriores.
 
-Para atendimento desse Tech Challenge, utilizamos a aplicação da fase 4 conforme documentação abaixo.
+Para atendimento desse Tech Challenge, utilizamos a aplicação da fase 4 conforme documentação.
 
 #### Pré requisitos
 
-Para reproduzir o cenário em máquinas locais, 
+Para reproduzir o cenário em máquinas locais, são necessários os recursos a seguir
 
 - Docker: https://www.docker.com/get-started/
 - Kubernetes: https://kubernetes.io/docs/setup/
@@ -56,7 +56,7 @@ O cluster também pode ser utilizado em um serviço de cloud. Para melhor compre
 
 ## Conclusão
 
-  Este projeto demonstra a utilização do projeto da fase 4 dentro de um cluster Kubernetes. Possibilitando assim, maior escalabilidade e estabilidade da aplicação
+  Este projeto demonstra a utilização do projeto da fase 4 dentro de um cluster Kubernetes. Possibilitando assim, maior escalabilidade, disponibilidade e estabilidade da aplicação.
 
 > Implementado por: Daniela Miranda de Almeida, Jhean Ricardo Ramos, Lucas dos anjos Varela, Marcelo de Moraes Andrade e Wellington Chida de Oliveira.
 
